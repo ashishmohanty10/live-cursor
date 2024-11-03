@@ -26,10 +26,6 @@ const handleMessage = (bytes: any, uuid: any) => {
   user.state = message;
 
   broadcast();
-
-  console.log(
-    `${user.username} updated their state: ${JSON.stringify(user.state)}`
-  );
 };
 
 const handleClose = (uuid: any) => {
@@ -44,7 +40,6 @@ const handleClose = (uuid: any) => {
 wss.on("connection", (connection, req: Request) => {
   const { username } = url.parse(req.url, true).query;
   const uuid = uuidv4();
-  console.log(username, uuid);
 
   connections[uuid] = connection;
 

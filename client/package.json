@@ -10,11 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lodash.throttle": "^4.1.1",
+    "perfect-cursors": "^1.0.5",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-use-websocket": "^4.10.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
+    "@types/lodash.throttle": "^4.1.9",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
